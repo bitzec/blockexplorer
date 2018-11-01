@@ -1,26 +1,27 @@
-Iquidus Explorer - 1.6.1
+bitzec Explorer 1.0.2 (Based on Iquidus Explorer - 1.6.1)
 ================
 
 An open source block explorer written in node.js.
 
 ### See it in action
 
-*  [Deutsche eMark](http://b.emark.tk/)
-*  [Sphere](http://sphere.iquidus.io)
-*  [Vertcoin](http://explorer.vertcoin.info/)
-*  [Vivo](http://vivo.explorerz.top:3003)
-*  [Florincoin](https://florincoin.info/info)
-*  [Maxcoin Explorer 1](https://explorer.maxcoinproject.net/)
-*  [Maxcoin Explorer 2](https://explorer2.maxcoinproject.net/)
-
+*  [bitzec](https://block.bitzec.tk)
 
 *note: If you would like your instance mentioned here contact me*
+
+### New Features in bitzec Explorer
+
+*   Added Mining Pool Menu
+*   Added Numeric formats in stats header
+*   Added Market Cap in main layout
+*   Added Mask IPs function for 'Network' layout (A.B.XXX.XXX)
+*   Added graphical node Network map on 'Network' tab
 
 ### Requires
 
 *  node.js >= 0.10.28
 *  mongodb 2.6.x
-*  *coind
+*  *bitzecd
 
 ### Create database
 
@@ -42,7 +43,7 @@ Create user with read/write access:
 
 ### Get the source
 
-    git clone https://github.com/iquidus/explorer explorer
+    git clone https://github.com/bitzec/explorer
 
 ### Install node modules
 
@@ -99,17 +100,16 @@ sync.js (located in scripts/) is used for updating the local databases. This scr
     */1 * * * * cd /path/to/explorer && /usr/bin/nodejs scripts/sync.js index update > /dev/null 2>&1
     */2 * * * * cd /path/to/explorer && /usr/bin/nodejs scripts/sync.js market > /dev/null 2>&1
     */5 * * * * cd /path/to/explorer && /usr/bin/nodejs scripts/peers.js > /dev/null 2>&1
-
+    */5 * * * * cd /path/to/explorer && /usr/bin/nodejs scripts/mapgetdata.js > /dev/null 2>&1
+    
 ### Wallet
 
 Iquidus Explorer is intended to be generic so it can be used with any wallet following the usual standards. The wallet must be running with atleast the following flags
 
     -daemon -txindex
 
-### Donate
 
-    BTC: 168hdKA3fkccPtkxnX8hBrsxNubvk4udJi
-    JBS: JZp9893FMmrm1681bDuJBU7c6w11kyEY7D
+
 
 ### Known Issues
 

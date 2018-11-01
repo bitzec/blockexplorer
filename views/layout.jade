@@ -17,10 +17,19 @@ html
     script(src='/vendor/jqplot/plugins/jqplot.barRenderer.min.js')
     script(src='/vendor/jqplot/plugins/jqplot.categoryAxisRenderer.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js')
+    script(src='/javascripts/jquery-jvectormap-2.0.3.min.js')
+    script(src='/javascripts/jquery-jvectormap-world-mill.js')
+    script(src='/javascripts/mapdata.js')
     script(src='//cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js')  
     script(src='//cdn.datatables.net/responsive/1.0.1/js/dataTables.responsive.js')
     script(src='//cdn.datatables.net/plug-ins/725b2a2115b/integration/bootstrap/3/dataTables.bootstrap.js')
     script(src='/javascripts/chart.js')
+    script.
+     var mktResults = [];
+     function get_mktcap () {
+      var totalcap = mktResults[0]*mktResults[1]*mktResults[2];
+      $("#mktcap").text(numeral(totalcap).format('$0,0.00'));
+      }
     script.
       $(document).ready(function(){
         $('##{active}').addClass('active');
@@ -119,7 +128,16 @@ html
               li#markets
                 a.navbar-link.loading(href='/markets/#{settings.markets.default}') 
                   span.fa.fa-line-chart
-                  span.menu-text #{settings.locale.menu_markets}
+                  span.menu-text #{settings.locale.menu_markets}            
+             if settings.display.pools == true
+              li#pools.dropdown
+                a(href="#")
+                  span.fa.fa-area-chart
+                  span.menu-text #{settings.locale.menu_pools}
+                    ul.dropdown-menu
+                     each pool in settings.poolslist
+                      li
+                        a(href="#{pool.poolurl}", target="_blank") #{pool.name}
             if settings.display.api == true
               li#info
                 a.navbar-link(href='/info')
@@ -208,12 +226,7 @@ html
             li.pull-left
               a#googleplus-icon(href="https://plus.google.com/#{settings.googleplus}", target='_blank')
                 span.glyphicon.fa.fa-google-plus
-        if settings.display.youtube
-          ul.nav.navbar-nav
-            li.pull-left
-              a#youtube-icon(href="https://www.youtube.com/channel/#{settings.youtube}", target='_blank')
-                span.glyphicon.fa.fa-youtube
-     .col-md-4
+      .col-md-4
         ul.nav
           li.text-center(style='margin-left:80px;margin-right:80px;')
             p(style='margin-top:15px;') 
