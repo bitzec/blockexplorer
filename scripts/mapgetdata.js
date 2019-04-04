@@ -4,7 +4,7 @@ var bresponse = undefined;
 var path = './public/javascripts/mapdata.js';
 
 function get_cc(cb) {
-  var req_url = "http://block.bitzec.tk/ext/connections/";
+  var req_url = "http://bitzec.insight.equihub.pro/ext/connections/";
   request({uri: req_url, json: true}, function (error, response, body) {
   bresponse = body;
   cb(bresponse);

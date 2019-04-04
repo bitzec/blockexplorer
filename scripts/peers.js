@@ -10,6 +10,7 @@ function maskips (splitaddy) {
   var ip = splitaddy;
   var breakip = ip.split('.');
   var masked = breakip[0] + '.' + breakip[1] + '.' + 'XXX' + '.' + 'XXX';
+//  console.log(breakip[0] + '.' + breakip[1] + '.' + 'XXX' + '.' + 'XXX');
   return masked;
 }
 
@@ -34,8 +35,8 @@ mongoose.connect(dbString, function(err) {
       lib.syncLoop(body.length, function (loop) {
         var i = loop.iteration();
         var address = body[i].addr.split(':')[0];
-        var maskedaddy = maskips(address);
-        db.find_peer(address, function(peer) {
+	var maskedaddy = maskips(address);
+        db.find_peer(maskedaddy, function(peer) {
           if (peer) {
             // peer already exists
             loop.next();
@@ -45,7 +46,8 @@ mongoose.connect(dbString, function(err) {
                 address: maskedaddy,
                 protocol: body[i].version,
                 version: body[i].subver.replace('/', '').replace('/', ''),
-                country: geo.country_name
+                country: geo.country_name,
+                countrycode: geo.country_code
               }, function(){
                 loop.next();
               });

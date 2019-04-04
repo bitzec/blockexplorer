@@ -10,10 +10,10 @@
   "address": "127.0.0.1:3001",
 
   // coin name
-  "coin": "Darkcoin",
+  "coin": "bitzec",
 
   // coin symbol
-  "symbol": "DRK",
+  "symbol": "bzc",
 
   // logo
   "logo": "/images/logo.png",
@@ -26,7 +26,7 @@
   //     Cerulean, Cosmo, Cyborg, Darkly, Flatly, Journal, Lumen, Paper,
   //     Readable, Sandstone, Simplex, Slate, Spacelab, Superhero, United, Yeti
   // theme (see /public/themes for available themes)
-  "theme": "Cyborg",
+  "theme": "Yeti",
 
   // port to listen for requests on.
   "port" : 3001,
@@ -47,9 +47,9 @@
   // wallet settings
   "wallet": {
     "host": "localhost",
-    "port": 9332,
-    "user": "darkcoinrpc",
-    "pass": "123gfjk3R3pCCVjHtbRde2s5kzdf233sa"
+    "port": 8322,
+    "user": "rpcuser",
+    "pass": "rpcpassword"
   },
 
   // confirmations
@@ -64,12 +64,13 @@
     "markets": true,
     "richlist": true,
     "twitter": true,
-    "facebook": false,
+    "facebook": true,
     "googleplus": false,
     "search": true,
     "movement": true,
     "network": true,
-    "pools": true
+    "pools": true,
+    "difflink": true
   },
   
   "poolslist": {
@@ -86,7 +87,7 @@
   "index": {
     "show_hashrate": true,
     "difficulty": "POW",
-    "last_txs": 100
+    "last_txs": 500
   },
 
   // ensure links on API page are valid
