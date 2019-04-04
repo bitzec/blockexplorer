@@ -5,15 +5,22 @@
 */
 {
   // name your instance!
-  "title": "IQUIDUS",
+  "title": "BITZEC",
 
   "address": "127.0.0.1:3001",
 
   // coin name
+<<<<<<< HEAD
   "coin": "bitzec",
 
   // coin symbol
   "symbol": "bzc",
+=======
+  "coin": "bITzEC",
+
+  // coin symbol
+  "symbol": "BZC",
+>>>>>>> 2bb0c6d9bbfc6456c044cd7ed17c458870f232e3
 
   // logo
   "logo": "/images/logo.png",
@@ -47,9 +54,15 @@
   // wallet settings
   "wallet": {
     "host": "localhost",
+<<<<<<< HEAD
     "port": 8322,
     "user": "rpcuser",
     "pass": "rpcpassword"
+=======
+    "port": 8732,
+    "user": "rpcuser",
+    "pass": "password"
+>>>>>>> 2bb0c6d9bbfc6456c044cd7ed17c458870f232e3
   },
 
   // confirmations
