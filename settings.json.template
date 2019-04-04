@@ -79,6 +79,11 @@
     "twitter": true,
     "facebook": true,
     "googleplus": false,
+    "bitcointalk": true,
+    "slack": false,
+    "discord": true,
+    "github": true,
+    "website": true,
     "search": true,
     "movement": true,
     "network": true,
@@ -105,10 +110,10 @@
 
   // ensure links on API page are valid
   "api": {
-    "blockindex": 1337,
-    "blockhash": "1733320247b15ca2262be646397d1ffd6be953fa638ebb8f5dcbb4c2b91b34f1",
-    "txhash": "f270cd3813254c9922a2e222a56ba745842d9112223a1394062e460b33d27b7e",
-    "address": "RBiXWscC63Jdn1GfDtRj8hgv4Q6Zppvpwb"
+    "blockindex": 4321,
+    "blockhash": "000409254390f36fae89a65cf9c1686c0a9672b1986ac191c74193679be0bacf",
+    "txhash": "d7b2b7be6cca1313934f8a8cb606b0de0aab6c492464d2eb196b99527988772c",
+    "address": "t1YEK3cY6ueXR9Qi2bNobieD7unC3ddWfQo"
   },
 
   // market settings
@@ -145,8 +150,8 @@
   "googleplus": "yourgooglepluspage",
 
   //genesis
-  "genesis_tx": "65f705d2f385dc85763a317b3ec000063003d6b039546af5d8195a5ec27ae410",
-  "genesis_block": "b2926a56ca64e0cd2430347e383f63ad7092f406088b9b86d6d68c2a34baef51",
+  "genesis_tx": "b7f36a4f6bf97a8de6967f11ce05cab8c589912565171019b25f31441dd4c664",
+  "genesis_block": "",00079b62bc6be00f2e9401f61a9eccf618e4d0e9eaa4abc04aee4371b1ddb549
 
   //heavy (enable/disable additional heavy features)
   "heavy": false,
@@ -172,7 +177,7 @@
 
   // nethash unitd: sets nethash API return units
   // valid options: "P" (PH/s), "T" (TH/s), "G" (GH/s), "M" (MH/s), "K" (KH/s)
-  "nethash_units": "G",
+  "nethash_units": "K",
 
   // Address labels
   // example : "JhbrvAmM7kNpwA6wD5KoAsbtikLWWMNPcM": {"label": "This is a burn address", "type":"danger", "url":"http://example.com"}
