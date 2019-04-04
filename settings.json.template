@@ -54,15 +54,9 @@
   // wallet settings
   "wallet": {
     "host": "localhost",
-<<<<<<< HEAD
-    "port": 8322,
+    "port": 8332,
     "user": "rpcuser",
     "pass": "rpcpassword"
-=======
-    "port": 8732,
-    "user": "rpcuser",
-    "pass": "password"
->>>>>>> 2bb0c6d9bbfc6456c044cd7ed17c458870f232e3
   },
 
   // confirmations
@@ -90,7 +84,7 @@
     "pools": true,
     "difflink": true
   },
-  
+
   "poolslist": {
         "pool1": {"name": "poolname", "poolurl": "http://pool.url.com"},
         "pool2": {"name": "poolname", "poolurl": "http://pool.url.com"},
