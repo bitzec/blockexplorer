@@ -10,17 +10,10 @@
   "address": "127.0.0.1:3001",
 
   // coin name
-<<<<<<< HEAD
-  "coin": "bitzec",
-
-  // coin symbol
-  "symbol": "bzc",
-=======
-  "coin": "bITzEC",
+  "coin": "BITZEC",
 
   // coin symbol
   "symbol": "BZC",
->>>>>>> 2bb0c6d9bbfc6456c044cd7ed17c458870f232e3
 
   // logo
   "logo": "/images/logo.png",
@@ -86,13 +79,17 @@
   },
 
   "poolslist": {
-        "pool1": {"name": "poolname", "poolurl": "http://pool.url.com"},
-        "pool2": {"name": "poolname", "poolurl": "http://pool.url.com"},
-        "pool3": {"name": "poolname", "poolurl": "http://pool.url.com"},
-        "pool4": {"name": "poolname", "poolurl": "http://pool.url.com"},
-        "pool5": {"name": "poolname", "poolurl": "http://pool.url.com"},
-        "pool6": {"name": "poolname", "poolurl": "https://pool.url.com"},
-        "pool7": {"name": "poolname", "poolurl": "https://pool.url.com"}
+        "pool1": {"name": "EasyMine.rocks - 0% (Zero Team Official)", "poolurl": "https://zero.easymine.rocks/"},
+	"pool2": {"name": "Suprnova.cc - 0% (Supports Zero)", "poolurl": "https://zero.suprnova.cc/"},
+	"pool3": {"name": "CryptoCommunity - 0.25% (Supports Zero)", "poolurl": "https://cryptocommunity.network/"},
+	"pool4": {"name": "Forgetop.com - 1% (Supports Zero)", "poolurl": "https://zero.forgetop.com"},
+	"pool5": {"name": "Minermore - 1% (Supports Zero)", "poolurl": "https://minermore.com/pool/ZER/"},
+	"pool6": {"name": "equipool - 1% (Supports Zero)", "poolurl": "https://equipool.1ds.us/"},
+	"pool7": {"name": "FomoMiners - 1% (Supports Zero)", "poolurl": "https://fomominers.com/"},
+	"pool8": {"name": "Zero-Currency - 1% (Supports Zero)", "poolurl": "https://pool.zero-currency.com/"},
+
+//	"pool##": {"name": "pool_name", "poolurl": "pool_url"} Copy and paste to above for adding pool
+
   },
 
   // index page (valid options for difficulty are POW, POS or Hybrid)
