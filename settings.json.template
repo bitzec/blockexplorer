@@ -47,7 +47,7 @@
   // wallet settings
   "wallet": {
     "host": "localhost",
-    "port": 8733,
+    "port": 8732,
     "user": "rpcuser",
     "pass": "rpcpassword"
   },
